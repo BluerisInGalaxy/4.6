@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <form  class="row mt-2 mb-2 add-todo-form">
+        <div class="col">
+            <input class="form-control todo-input" type="text">
+        </div>
+        <div class="col-1">
+            <button class="btn w-100 btn-success" type="submit">Add</button>
+        </div>
+    </form>
+
+    <div class="row todo-list">
+        <!-- Todo elements here -->
+    </div>
+
+    <div class="row mt-3">
+        <div class="col">
+            <ul class="pagination todo-pagination">
+                <!-- Pagination links here -->
+                
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+    <template id="pagination-item">
+        <li class="page-item">
+            <a href="#" class="page-link">3</a>
+        </li>
+    </template>
+    
+
+    <template id="todo-item">
+        <div class="col-12">
+            <div class="todo p-3 border d-flex align-items-center justify-content-between">
+                <input class="form-check-input todo-is-completed" type="checkbox">
+                <label class="todo-title me-auto ms-3 h4 form-check-label d-flex align-items-center" >
+                    Lorem
+                </label>
+                <button class="btn btn-danger todo-delete-btn">Delete</button>
+            </div>
+        </div>
+    </template>
+
+
+    <script src="./js/localstorage.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
